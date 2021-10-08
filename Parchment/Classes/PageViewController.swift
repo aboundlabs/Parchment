@@ -302,7 +302,7 @@ extension PageViewController: PageViewManagerDelegate {
         scrollView.frame = view.bounds
     }
 
-    func layoutViews(for viewControllers: [UIViewController], keepContentOffset: Bool) {
+    public func layoutViews(for viewControllers: [UIViewController], keepContentOffset: Bool) {
         let viewControllers = isRightToLeft ? viewControllers.reversed() : viewControllers
 
         // Need to trigger a layout here to ensure that the scroll view
